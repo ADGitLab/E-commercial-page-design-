@@ -635,4 +635,8 @@ h1 {
   #minus {
     width: 1rem;
   }
+
+  #close-full {
+    display: none;
+  }
 }
