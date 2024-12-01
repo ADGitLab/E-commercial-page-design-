@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <nav>
+          <div class="links">
+            <img src="images/icon-menu.svg" alt="error" class="menu" />
+            <img src="images/logo.svg" alt="error" />
+            <div class="all-link">
+              <img src="images/icon-close.svg" alt="error" id="close-menu" />
+              <a href="" class="nav-link" id="colact">Collections</a>
+              <a href="" class="nav-link" id="man">Men</a>
+              <a href="" class="nav-link" id="omn">Women</a>
+              <a href="" class="nav-link" id="about">About</a>
+              <a href="" class="nav-link" id="Contact">Contact</a>
+            </div>
+          </div>
+          <div class="cart-box">
+            <div>
+              <img src="images/icon-cart.svg" alt="error" / id="cart">
+              <p class="cart-item-num">0</p>
+            </div>
+            <img src="images/image-avatar.png" alt="error" />
+          </div>
+        </nav>
+        <hr />
+      </header>
+      <main>
+        <section class="left">
+          <div class="big-img">
+            <div id="big-png">
+              <img src="images/image-product-1.jpg" alt="error" id="p1" />
+              <img src="images/image-product-2.jpg" alt="error" id="p2" />
+              <img src="images/image-product-3.jpg" alt="error" id="p3" />
+              <img src="images/image-product-4.jpg" alt="error" id="p4" />
+            </div>
+            <div class="small-img">
+              <img
+                src="images/image-product-1-thumbnail.jpg"
+                alt="error"
+                class="thum"
+                id="t1"
+              />
+              <img
+                src="images/image-product-2-thumbnail.jpg"
+                alt="error"
+                class="thum"
+                id="t2"
+              />
+              <img
+                src="images/image-product-3-thumbnail.jpg"
+                alt="error"
+                class="thum"
+                id="t3"
+              />
+              <img
+                src="images/image-product-4-thumbnail.jpg"
+                alt="error"
+                class="thum"
+                id="t4"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="right">
+          <div class="info">
+            <div class="txt">
+              <h5>Sneaker Company</h5>
+              <h1>Fall Limited Edition Sneakers</h1>
+              <p>
+                These low-profile sneakers are your perfect casual wear
+                companion. Featuring a durable rubber outer sole, they’ll
+                withstand everything the weather can offer.
+              </p>
+            </div>
+            <div class="price">
+              <div class="current-price">
+                <p>$125.00</p>
+                <label>50%</label>
+              </div>
+              <p>$250.00</p>
+            </div>
+            <div class="buy-item">
+              <div class="count">
+                <img src="images/icon-minus.svg" alt="error" id="minus" />
+                <p id="itm-num">0</p>
+                <img src="images/icon-plus.svg" alt="error" id="plus" />
+              </div>
+
+              <button class="add-to-cart">
+                <img src="images/icon-cart.svg" alt="error" />
+                <p>Add to cart</p>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <section class="left" id="full-page">
+      <div class="big-img" id="full-img">
+        <div class="big-full-img">
+          <img src="images/icon-close.svg" alt="error" id="close-full" />
+          <div class="icon" id="left-icon">
+            <img src="images/icon-previous.svg" alt="error" />
+          </div>
+          <div class="light-box">
+            <img src="images/image-product-1.jpg" alt="error" id="l1" />
+            <img src="images/image-product-2.jpg" alt="error" id="l2" />
+            <img src="images/image-product-3.jpg" alt="error" id="l3" />
+            <img src="images/image-product-4.jpg" alt="error" id="l4" />
+          </div>
+          <div class="icon" id="right-icon">
+            <img src="images/icon-next.svg" alt="error" />
+          </div>
+        </div>
+        <div class="small-img" id="full-size">
+          <img src="images/image-product-1-thumbnail.jpg" alt="error" />
+          <img src="images/image-product-2-thumbnail.jpg" alt="error" />
+          <img src="images/image-product-3-thumbnail.jpg" alt="error" />
+          <img src="images/image-product-4-thumbnail.jpg" alt="error" />
+        </div>
+      </div>
+    </section>
+
+    <div class="cart-hover">
+      <div class="cart-head">Cart</div>
+      <hr />
+      <div class="cart-body">
+        <p class="emt-msg">Your cart is empty.</p>
+        <div class="added">
+          <div class="cart-items">
+            <div class="item-info">
+              <div class="item-img">
+                <img src="images/image-product-1-thumbnail.jpg" alt="error" />
+              </div>
+              <div class="aline">
+                <p>Fall Limited Edition Sneakers</p>
+                <div class="prices">
+                  <p>$125.00 x</p>
+                  <p id="amount">1</p>
+                  <p id="total-cost">$125.00</p>
+                </div>
+              </div>
+            </div>
+            <img src="images/icon-delete.svg" alt="error" / id="delet">
+          </div>
+          <button id="checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
