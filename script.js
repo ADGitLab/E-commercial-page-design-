@@ -146,14 +146,16 @@ thumbnails.forEach((th) => {
 
 const cartHover = document.querySelector(".cart-hover");
 const cart = document.getElementById("cart");
-const closeCart = document.querySelector(".cart-head");
+let state = "hid";
 
 cart.addEventListener("click", () => {
-  cartHover.style.display = "block";
-});
-
-closeCart.addEventListener("click", () => {
-  cartHover.style.display = "none";
+  if (state == "hid") {
+    cartHover.style.display = "block";
+    state = "vis";
+  } else if (state == "vis") {
+    cartHover.style.display = "none";
+    state = "hid";
+  }
 });
 
 const leftBtn = document.getElementById("left-icon");
